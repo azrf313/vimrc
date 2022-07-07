@@ -24,6 +24,9 @@ set smartindent
 
 set noswapfile
 
+"enable mouse
+set mouse=a
+
 syntax on
 filetype on
 filetype indent on
@@ -47,7 +50,9 @@ call plug#begin()
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-colorscheme dracula
+colorscheme gruvbox
+set background=dark
